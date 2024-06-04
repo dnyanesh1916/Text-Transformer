@@ -62,7 +62,7 @@ function App() {
       <Alert alert={alert} />
       
         <Routes>
-          <Route exact path='/' element={<Home showAlert={showAlert} mode={mode} />} />
+          <Route exact path='/Text-Transform' element={<Home showAlert={showAlert} mode={mode} />} />
           <Route exact path='/about' element={<About showAlert={showAlert} mode={mode}/>} />
         </Routes>
       </Router>
