@@ -4,6 +4,7 @@ export default function Navbar(props) {
     return (
       <>
         <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} py-2`}>
+    <div></div>
     <a className="navbar-brand" href="/">Text Transformer</a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -20,7 +21,7 @@ export default function Navbar(props) {
       </ul>
       <div className="d-inline sham ">
           <button className="btn btn-primary m-1" onClick={()=>{props.toggleModem('primary')}} ></button>
-          <button className="btn btn-secondary m-1" onClick={()=>{props.toggleModem('secondary')}}></button>
+          <button className="btn btn-primary m-1" onClick={()=>{props.toggleModem('secondary')}}></button>
           <button className="btn btn-success m-1" onClick={()=>{props.toggleModem('success')}} ></button>
           <button className="btn btn-danger m-1" onClick={()=>{props.toggleModem('danger')}}></button>
           <button className="btn btn-warning m-1" onClick={()=>{props.toggleModem('warning')}}></button>
